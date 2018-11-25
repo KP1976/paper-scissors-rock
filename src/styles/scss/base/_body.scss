@@ -1,0 +1,16 @@
+:root {
+	--bck-clr: #0068ff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bck-clr);
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
