@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Game from './Game';
-import Result from './Result';
 
 import paper from '../images/papier.svg';
 import scissors from '../images/nozyczki.svg';
@@ -19,7 +18,6 @@ class Container extends Component {
 					</figure>
 				</header>
 				<Game />
-				<Result />
 			</div>
 		);
 	}
