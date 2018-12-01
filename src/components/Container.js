@@ -12,7 +12,7 @@ class Container extends Component {
 			<div className="container">
 				<header className="header">
 					<h1 className="header__title">papier, nożyczki, kamień</h1>
-					<figure className="imgages">
+					<figure className="images">
 						<img className="images__img" src={paper} alt="paper SVG" />
 						<img className="images__img" src={scissors} alt="scissors SVG" />
 						<img className="images__img" src={rock} alt="rock SVG" />
