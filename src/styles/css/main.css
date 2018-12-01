@@ -323,32 +323,66 @@ body {
   border-radius: var(--radius);
   box-shadow: 0 0 20px var(--shadow);
   height: 46.25rem;
-  padding: 3rem;
+  padding: 3rem 5rem;
   width: 50rem; }
+  .container .header {
+    border-bottom: dotted 1px;
+    display: flex;
+    flex-direction: column; }
+    .container .header__title {
+      font-size: 2.5rem;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase; }
+    .container .header .images {
+      align-items: end;
+      display: grid;
+      grid-column-gap: 6.5625rem;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      margin: 0.5rem 0 2rem 0;
+      padding: 0 4rem; }
+      .container .header .images__img {
+        width: 100%; }
+        .container .header .images__img:nth-child(1) {
+          width: 120px; }
+        .container .header .images__img:nth-child(2) {
+          width: 115px; }
+        .container .header .images__img:nth-child(3) {
+          width: 83px; }
 
-.header {
-  display: flex;
-  flex-direction: column; }
-  .header__title {
-    font-size: 2.5rem;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase; }
-  .header .images {
-    align-items: end;
-    display: grid;
-    grid-column-gap: 6.5625rem;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    margin: 0.5rem 0 2rem 0;
-    padding: 0 4rem; }
-    .header .images__img {
-      width: 100%; }
-      .header .images__img:nth-child(1) {
-        width: 120px; }
-      .header .images__img:nth-child(2) {
-        width: 115px; }
-      .header .images__img:nth-child(3) {
-        width: 83px; }
+.game {
+  align-items: center;
+  border-bottom: dotted 1px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem; }
+  .game__player-hand, .game__computer-hand {
+    width: 100%; }
+  .game__result {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: center; }
+  .game__player-text, .game__computer-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem; }
+  .game__start {
+    background-color: var(--bck-clr);
+    border: 0;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    color: var(--white);
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    width: 10rem; }
+    .game__start:hover {
+      background-color: black; }
 
 /*# sourceMappingURL=main.css.map */

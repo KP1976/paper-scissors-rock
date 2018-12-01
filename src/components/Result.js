@@ -5,8 +5,8 @@ class Result extends Component {
 		return (
 			<div className="result">
 				<h2 className="result__title">Wynik:</h2>
-				<span className="result__player" />
-				<span className="result__computer" />
+				<span className="result__player">0</span>
+				<span className="result__computer">0</span>
 			</div>
 		);
 	}
