@@ -1,0 +1,23 @@
+.result {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	justify-items: center;
+	margin-top: 3rem;
+
+	&__title {
+		font-size: 2.5rem;
+		font-weight: bold;
+		grid-column: 1 / -1;
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__player,
+	&__computer {
+		font-size: 5rem;
+		font-weight: bold;
+	}
+}
