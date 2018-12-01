@@ -1,5 +1,10 @@
 :root {
 	--bck-clr: #0068ff;
+	--white: #fff;
+
+	--radius: 10px;
+
+	--shadow: rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -9,8 +14,11 @@
 }
 
 body {
+	align-items: center;
 	background-color: var(--bck-clr);
+	display: flex;
 	height: 100vh;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
 }
