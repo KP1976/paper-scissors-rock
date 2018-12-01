@@ -35,8 +35,6 @@ class Game extends Component {
 			this.setState({ resultIndex: 1, playerScore: this.state.playerScore + 1 });
 		}
 
-		console.log(this.state.playerScore, this.state.computerScore);
-
 		this.setState({ playerIndex: playerChoice, computerIndex: computerChoice });
 	};
 

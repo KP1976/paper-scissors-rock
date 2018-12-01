@@ -20,24 +20,36 @@
 		.images {
 			align-items: end;
 			display: grid;
-			grid-column-gap: 6.5625rem;
 			grid-template-columns: repeat(3, 1fr);
 			justify-items: center;
-			margin: 0.5rem 0 2rem 0;
-			padding: 0 4rem;
+			margin: 1.5rem 0 2rem 0;
 
-			&__img {
-				width: 100%;
+			&__circle {
+				align-items: center;
+				background-color: var(--bck-clr);
+				border: solid 5px var(--gray);
+				border-radius: 50%;
+				cursor: pointer;
+				display: flex;
+				height: 10.9375rem;
+				justify-content: center;
+				transition: all 0.3s ease-in;
+				width: 10.9375rem;
 
-				&:nth-child(1) {
+				&:hover {
+					border: solid 5px var(--gray);
+					box-shadow: 0 0 10px 5px var(--bck-clr);
+				}
+
+				&:nth-child(1) .images__img {
 					width: 120px;
 				}
 
-				&:nth-child(2) {
+				&:nth-child(2) .images__img {
 					width: 115px;
 				}
 
-				&:nth-child(3) {
+				&:nth-child(3) .images__img {
 					width: 83px;
 				}
 			}

@@ -299,6 +299,7 @@ template {
 
 :root {
   --bck-clr: #0068ff;
+  --gray: #c8c8c8;
   --white: #fff;
   --radius: 10px;
   --shadow: rgba(0, 0, 0, 0.2); }
@@ -336,18 +337,28 @@ body {
     .container .header .images {
       align-items: end;
       display: grid;
-      grid-column-gap: 6.5625rem;
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
-      margin: 0.5rem 0 2rem 0;
-      padding: 0 4rem; }
-      .container .header .images__img {
-        width: 100%; }
-        .container .header .images__img:nth-child(1) {
+      margin: 1.5rem 0 2rem 0; }
+      .container .header .images__circle {
+        align-items: center;
+        background-color: var(--bck-clr);
+        border: solid 5px var(--gray);
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        height: 10.9375rem;
+        justify-content: center;
+        transition: all 0.3s ease-in;
+        width: 10.9375rem; }
+        .container .header .images__circle:hover {
+          border: solid 5px var(--gray);
+          box-shadow: 0 0 10px 5px var(--bck-clr); }
+        .container .header .images__circle:nth-child(1) .images__img {
           width: 120px; }
-        .container .header .images__img:nth-child(2) {
+        .container .header .images__circle:nth-child(2) .images__img {
           width: 115px; }
-        .container .header .images__img:nth-child(3) {
+        .container .header .images__circle:nth-child(3) .images__img {
           width: 83px; }
 
 .game {
