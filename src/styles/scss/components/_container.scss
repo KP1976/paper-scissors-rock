@@ -24,6 +24,10 @@
 			justify-items: center;
 			margin: 1.5rem 0 2rem 0;
 
+			&__img {
+				pointer-events: none;
+			}
+
 			&__circle {
 				align-items: center;
 				background-color: var(--bck-clr);

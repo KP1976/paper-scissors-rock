@@ -3,14 +3,14 @@
 	border-bottom: dotted 1px;
 	display: grid;
 	grid-template-columns: 15rem 1fr 15rem;
-	grid-template-rows: 9.375rem auto;
+	grid-template-rows: 9rem auto;
 	justify-items: center;
-	margin-top: 2rem;
-	padding-bottom: 2rem;
+	margin-top: 1.25rem;
+	padding-bottom: 1.25rem;
 
 	&__player-hand,
 	&__computer-hand {
-		height: 90%;
+		height: 100%;
 		width: 100%;
 	}
 

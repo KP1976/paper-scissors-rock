@@ -340,6 +340,8 @@ body {
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       margin: 1.5rem 0 2rem 0; }
+      .container .header .images__img {
+        pointer-events: none; }
       .container .header .images__circle {
         align-items: center;
         background-color: var(--bck-clr);
@@ -366,12 +368,12 @@ body {
   border-bottom: dotted 1px;
   display: grid;
   grid-template-columns: 15rem 1fr 15rem;
-  grid-template-rows: 9.375rem auto;
+  grid-template-rows: 9rem auto;
   justify-items: center;
-  margin-top: 2rem;
-  padding-bottom: 2rem; }
+  margin-top: 1.25rem;
+  padding-bottom: 1.25rem; }
   .game__player-hand, .game__computer-hand {
-    height: 90%;
+    height: 100%;
     width: 100%; }
   .game__result {
     font-size: 1.125rem;
@@ -400,14 +402,14 @@ body {
 .result {
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6rem;
+  grid-template-columns: repeat(3, min-content);
   justify-content: center;
   justify-items: center;
   margin-top: 3rem; }
   .result__title {
     font-size: 2.5rem;
     font-weight: bold;
-    grid-column: 1 / -1;
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
