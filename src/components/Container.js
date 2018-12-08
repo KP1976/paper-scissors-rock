@@ -11,6 +11,9 @@ class Container extends Component {
 	};
 
 	indexChoice = e => {
+		const computerHand = document.querySelector('.game__computer-hand');
+		computerHand.style.visibility = 'hidden';
+
 		switch (e.target.firstElementChild.getAttribute('alt')) {
 			case 'paper': {
 				this.setState({ imageIndex: 0 });

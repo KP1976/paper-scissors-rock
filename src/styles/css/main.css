@@ -375,6 +375,8 @@ body {
   .game__player-hand, .game__computer-hand {
     height: 100%;
     width: 100%; }
+  .game__computer-hand {
+    visibility: hidden; }
   .game__result {
     font-size: 1.125rem;
     font-weight: bold;

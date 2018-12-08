@@ -16,8 +16,11 @@ class Game extends Component {
 	};
 
 	play = () => {
+		const computerHand = document.querySelector('.game__computer-hand');
 		const playerChoice = this.props.choice;
 		const computerChoice = Math.floor(Math.random() * 3);
+
+		computerHand.style.visibility = 'visible';
 
 		if (playerChoice === computerChoice) {
 			this.setState({ resultIndex: 0 });
