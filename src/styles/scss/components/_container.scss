@@ -10,6 +10,11 @@
 		width: 33.75rem;
 	}
 
+	@include mq(600px) {
+		padding: 1.25rem;
+		width: 17.5rem;
+	}
+
 	.header {
 		border-bottom: dotted 1px;
 		display: flex;
@@ -24,6 +29,10 @@
 			@include mq(900px) {
 				font-size: 1.87rem;
 			}
+
+			@include mq(600px) {
+				font-size: 1rem;
+			}
 		}
 
 		.images {
@@ -35,6 +44,10 @@
 
 			@include mq(900px) {
 				margin: 1.875rem 0;
+			}
+
+			@include mq(600px) {
+				margin: 1.25rem 0;
 			}
 
 			&__img {
@@ -58,6 +71,11 @@
 					width: 8.1875rem;
 				}
 
+				@include mq(600px) {
+					height: 4.5rem;
+					width: 4.5rem;
+				}
+
 				&:hover {
 					border: solid 5px var(--gray);
 					box-shadow: 0 0 10px 5px var(--bck-clr);
@@ -69,6 +87,10 @@
 					@include mq(900px) {
 						width: 89px;
 					}
+
+					@include mq(600px) {
+						width: 48px;
+					}
 				}
 
 				&:nth-child(2) .images__img {
@@ -77,6 +99,10 @@
 					@include mq(900px) {
 						width: 85px;
 					}
+
+					@include mq(600px) {
+						width: 46px;
+					}
 				}
 
 				&:nth-child(3) .images__img {
@@ -84,6 +110,10 @@
 
 					@include mq(900px) {
 						width: 62px;
+					}
+
+					@include mq(600px) {
+						width: 33px;
 					}
 				}
 			}

@@ -14,6 +14,12 @@
 		margin-top: 0;
 	}
 
+	@include mq(600px) {
+		grid-template-columns: 5rem minmax(3rem, 1fr) 5rem;
+		grid-template-rows: 5rem auto auto;
+		grid-column-gap: 0.5rem;
+	}
+
 	&__player-hand,
 	&__computer-hand {
 		height: 100%;
@@ -21,6 +27,10 @@
 
 		@include mq(900px) {
 			height: 90px;
+		}
+
+		@include mq(600px) {
+			height: 50px;
 		}
 	}
 
@@ -36,6 +46,10 @@
 		@include mq(900px) {
 			font-size: 1rem;
 		}
+
+		@include mq(600px) {
+			font-size: 0.75rem;
+		}
 	}
 
 	&__player-text,
@@ -47,6 +61,18 @@
 		@include mq(900px) {
 			align-self: start;
 			margin-top: 0;
+		}
+
+		@include mq(600px) {
+			font-size: 0.875rem;
+			grid-row: 2 / 3;
+		}
+	}
+
+	&__computer-text {
+		@include mq(600px) {
+			align-self: start;
+			grid-column: 3 / 4;
 		}
 	}
 
@@ -67,6 +93,13 @@
 		@include mq(900px) {
 			margin-top: 2.5rem;
 			width: 12.5rem;
+		}
+
+		@include mq(600px) {
+			font-size: 1rem;
+			grid-column: 1 / -1;
+			margin-top: 1rem;
+			width: 100%;
 		}
 
 		&:hover {
