@@ -325,6 +325,10 @@ body {
   box-shadow: 0 0 20px var(--shadow);
   padding: 3rem 5rem;
   width: 50rem; }
+  @media screen and (max-width: 900px) {
+    .container {
+      padding: 3.125rem;
+      width: 33.75rem; } }
   .container .header {
     border-bottom: dotted 1px;
     display: flex;
@@ -334,12 +338,18 @@ body {
       margin: 0;
       text-align: center;
       text-transform: uppercase; }
+      @media screen and (max-width: 900px) {
+        .container .header__title {
+          font-size: 1.87rem; } }
     .container .header .images {
       align-items: end;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       margin: 1.5rem 0 2rem 0; }
+      @media screen and (max-width: 900px) {
+        .container .header .images {
+          margin: 1.875rem 0; } }
       .container .header .images__img {
         pointer-events: none; }
       .container .header .images__circle {
@@ -353,15 +363,28 @@ body {
         justify-content: center;
         transition: all 0.3s ease-in;
         width: 10.9375rem; }
+        @media screen and (max-width: 900px) {
+          .container .header .images__circle {
+            height: 8.1875rem;
+            width: 8.1875rem; } }
         .container .header .images__circle:hover {
           border: solid 5px var(--gray);
           box-shadow: 0 0 10px 5px var(--bck-clr); }
         .container .header .images__circle:nth-child(1) .images__img {
           width: 120px; }
+          @media screen and (max-width: 900px) {
+            .container .header .images__circle:nth-child(1) .images__img {
+              width: 89px; } }
         .container .header .images__circle:nth-child(2) .images__img {
           width: 115px; }
+          @media screen and (max-width: 900px) {
+            .container .header .images__circle:nth-child(2) .images__img {
+              width: 85px; } }
         .container .header .images__circle:nth-child(3) .images__img {
           width: 83px; }
+          @media screen and (max-width: 900px) {
+            .container .header .images__circle:nth-child(3) .images__img {
+              width: 62px; } }
 
 .game {
   align-items: center;
@@ -372,19 +395,34 @@ body {
   justify-items: center;
   margin-top: 1.25rem;
   padding-bottom: 1.25rem; }
+  @media screen and (max-width: 900px) {
+    .game {
+      grid-template-columns: 9rem minmax(7rem, 1fr) 9rem;
+      grid-column-gap: 1rem;
+      margin-top: 0; } }
   .game__player-hand, .game__computer-hand {
     height: 100%;
     width: 100%; }
+    @media screen and (max-width: 900px) {
+      .game__player-hand, .game__computer-hand {
+        height: 90px; } }
   .game__computer-hand {
     visibility: hidden; }
   .game__result {
     font-size: 1.125rem;
     font-weight: bold;
     text-align: center; }
+    @media screen and (max-width: 900px) {
+      .game__result {
+        font-size: 1rem; } }
   .game__player-text, .game__computer-text {
     font-size: 1.25rem;
     font-weight: bold;
     margin-top: 1rem; }
+    @media screen and (max-width: 900px) {
+      .game__player-text, .game__computer-text {
+        align-self: start;
+        margin-top: 0; } }
   .game__start {
     background-color: var(--bck-clr);
     border: 0;
@@ -398,6 +436,10 @@ body {
     margin-top: 1rem;
     transition: all 0.3s ease-in-out;
     width: 10rem; }
+    @media screen and (max-width: 900px) {
+      .game__start {
+        margin-top: 2.5rem;
+        width: 12.5rem; } }
     .game__start:hover {
       background-color: black; }
 
@@ -409,14 +451,23 @@ body {
   justify-content: center;
   justify-items: center;
   margin-top: 3rem; }
+  @media screen and (max-width: 900px) {
+    .result {
+      margin-top: 1.875rem; } }
   .result__title {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
+    @media screen and (max-width: 900px) {
+      .result__title {
+        font-size: 1.875rem; } }
   .result__player, .result__computer {
     font-size: 5rem;
     font-weight: bold; }
+    @media screen and (max-width: 900px) {
+      .result__player, .result__computer {
+        font-size: 3.75rem; } }
 
 /*# sourceMappingURL=main.css.map */

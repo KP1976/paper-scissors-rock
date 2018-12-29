@@ -7,17 +7,29 @@
 	justify-items: center;
 	margin-top: 3rem;
 
+	@include mq(900px) {
+		margin-top: 1.875rem;
+	}
+
 	&__title {
 		font-size: 2.5rem;
 		font-weight: bold;
 		margin: 0;
 		text-align: center;
 		text-transform: uppercase;
+
+		@include mq(900px) {
+			font-size: 1.875rem;
+		}
 	}
 
 	&__player,
 	&__computer {
 		font-size: 5rem;
 		font-weight: bold;
+
+		@include mq(900px) {
+			font-size: 3.75rem;
+		}
 	}
 }

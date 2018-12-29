@@ -5,6 +5,11 @@
 	padding: 3rem 5rem;
 	width: 50rem;
 
+	@include mq(900px) {
+		padding: 3.125rem;
+		width: 33.75rem;
+	}
+
 	.header {
 		border-bottom: dotted 1px;
 		display: flex;
@@ -15,6 +20,10 @@
 			margin: 0;
 			text-align: center;
 			text-transform: uppercase;
+
+			@include mq(900px) {
+				font-size: 1.87rem;
+			}
 		}
 
 		.images {
@@ -23,6 +32,10 @@
 			grid-template-columns: repeat(3, 1fr);
 			justify-items: center;
 			margin: 1.5rem 0 2rem 0;
+
+			@include mq(900px) {
+				margin: 1.875rem 0;
+			}
 
 			&__img {
 				pointer-events: none;
@@ -40,6 +53,11 @@
 				transition: all 0.3s ease-in;
 				width: 10.9375rem;
 
+				@include mq(900px) {
+					height: 8.1875rem;
+					width: 8.1875rem;
+				}
+
 				&:hover {
 					border: solid 5px var(--gray);
 					box-shadow: 0 0 10px 5px var(--bck-clr);
@@ -47,14 +65,26 @@
 
 				&:nth-child(1) .images__img {
 					width: 120px;
+
+					@include mq(900px) {
+						width: 89px;
+					}
 				}
 
 				&:nth-child(2) .images__img {
 					width: 115px;
+
+					@include mq(900px) {
+						width: 85px;
+					}
 				}
 
 				&:nth-child(3) .images__img {
 					width: 83px;
+
+					@include mq(900px) {
+						width: 62px;
+					}
 				}
 			}
 		}
