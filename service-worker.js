@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/paper-scissors-rock/precache-manifest.38ac82dd89c7077d09e03c602d729951.js"
+  "/paper-scissors-rock/precache-manifest.20cd16673b274992c2c1878f30f8ca2a.js"
 );
 
 workbox.clientsClaim();

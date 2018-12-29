@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/paper-scissors-rock/static/js/runtime~main.19d4759b.js"
   },
   {
-    "revision": "c4d201d9c24743a64903",
-    "url": "/paper-scissors-rock/static/js/main.c4d201d9.chunk.js"
+    "revision": "5fa9b53210696b32d1a9",
+    "url": "/paper-scissors-rock/static/js/main.5fa9b532.chunk.js"
   },
   {
     "revision": "b7dc123a37791ff87c3b",
     "url": "/paper-scissors-rock/static/js/1.b7dc123a.chunk.js"
   },
   {
-    "revision": "c4d201d9c24743a64903",
-    "url": "/paper-scissors-rock/static/css/main.f886cb1b.chunk.css"
+    "revision": "5fa9b53210696b32d1a9",
+    "url": "/paper-scissors-rock/static/css/main.fb813799.chunk.css"
   },
   {
-    "revision": "8d9335b496036b26751f1c63e97832e3",
+    "revision": "929951fcd4404d441202f39ec5a9419a",
     "url": "/paper-scissors-rock/index.html"
   }
 ];
